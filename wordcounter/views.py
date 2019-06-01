@@ -3,7 +3,7 @@ import random
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 def about(request):
     return render(request, 'about.html')
 def count(request):
@@ -33,4 +33,4 @@ def select(request):
 
     list.sort()
 
-    return render(request, 'home.html', {'list':list}) #(3) list의 값을 'list'라는 이름으로 보낸다.
+    return render(request, 'index.html', {'list':list}) #(3) list의 값을 'list'라는 이름으로 보낸다.
